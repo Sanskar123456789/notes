@@ -7,7 +7,9 @@ import {Observable} from 'rxjs';
 })
 export class AuthserviceService {
 
-  api = "http://localhost:3000/notes/data/users"
+  // api = "http://localhost:3000/notes/data/users" development api
+  api ="https://e-notesback.herokuapp.com/notes/data/users";
+// production one ^
   constructor(private http: HttpClient) { }
 
   checkuser(data:{email: string, password: string}): Observable<any> {

@@ -7,7 +7,9 @@ import {Observable} from 'rxjs';
 })
 export class NotesService {
 
-  api = "http://localhost:3000/notes/data/notes"
+   // api = "http://localhost:3000/notes/data/users" development api
+   api ="https://e-notesback.herokuapp.com/notes/data/users";
+   // production one ^
   constructor(private http : HttpClient) { }
 
   postnotes(notes:{headers: string,id: string,notes: string,color: string}):Observable<any> {
