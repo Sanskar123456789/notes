@@ -1,0 +1,19 @@
+<p-toast></p-toast>
+<div class="login">
+    <div class="container">
+        <div class="p-card">
+            <div class="inputs">
+                <form [formGroup]="form">
+                    <p>Login</p>
+                    <input type="text" formControlName="email" pInputText placeholder="email"> 
+                    <br><br>
+                    <input type="password" formControlName="password" pInputText placeholder="Password">
+                    <br><br>
+                    <small *ngIf="iserror"><p>{{message}}</p></small>
+                    <p-button label="Submit" (onClick)="onSubmit()"></p-button> 
+                    <p-button label="Sign In" class="ml-4" (onClick)="signin()"></p-button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

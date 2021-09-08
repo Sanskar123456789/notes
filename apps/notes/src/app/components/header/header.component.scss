@@ -1,0 +1,22 @@
+.header {
+  .p-card {
+    background-image: linear-gradient(#eb3349, #f45c43);
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  h1 {
+    padding-top: 15px;
+    color: var(--surface-100);
+  }
+  .toolbar {
+    width: 70%;
+  }
+  .mr-5 {
+    margin: 5px;
+  }
+
+  button {
+    margin-right: 2px;
+  }
+}

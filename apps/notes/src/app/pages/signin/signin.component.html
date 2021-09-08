@@ -1,0 +1,21 @@
+<p-toast></p-toast>
+<div class="login">
+    <div class="container">
+        <div class="p-card">
+            <div class="inputs">
+                <form [formGroup]="form">
+                    <p>Sign In</p>
+                    <input type="text" formControlName="email" pInputText placeholder="email"> 
+                    <br><br>
+                    <input type="password" formControlName="password" pInputText placeholder="Password">
+                    <br><br>
+                    <input type="text" formControlName="name" pInputText placeholder="Username"> 
+                    <br><br>
+                    <input type="number" formControlName="phone" pInputText placeholder="PhoneNumber">
+                    <br><br>
+                    <p-button label="Submit" (onClick)="onSubmit()"></p-button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.login {
+  margin-top: 20px;
+  .container {
+    width: 80%;
+    .p-card {
+      margin-left: 15%;
+      height: 500px;
+      background-image: linear-gradient(#eb3349, #f45c43);
+      display: flex;
+      justify-content: center;
+      .inputs {
+        p {
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-weight: 400;
+          color: azure;
+        }
+        margin-top: 10%;
+      }
+    }
+  }
+}

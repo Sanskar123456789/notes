@@ -1,0 +1,16 @@
+<div class="header">
+    <div class="p-card" styleClass="p-card-shadow">
+        <h1>Create Notes</h1>
+        <p-toolbar class="toolbar">
+            <div class="p-toolbar-group-left">
+                <p-button label="New" icon="pi pi-plus" (onClick)="tonewnotes()"></p-button>
+                <p-button *ngIf="!ishomepage" label="Home" icon="pi pi-home" class="mr-5" (onClick)="homepage()"></p-button>
+            </div>
+            <div class="p-toolbar-group-right">
+                <p-button icon="pi pi-calendar" styleClass="p-button-success mr-2" (onClick)="toseenotes()"></p-button>
+                <p-button icon="pi pi-arrow-left" styleClass="p-button-success mr-2" (onClick)="logout()" ></p-button>
+                
+            </div>
+        </p-toolbar>
+    </div>
+</div>

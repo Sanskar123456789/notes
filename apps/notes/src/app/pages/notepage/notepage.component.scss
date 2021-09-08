@@ -1,0 +1,26 @@
+.notes {
+  width: 100%;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 80px;
+  .p-card {
+    background-color: var(--surface-200);
+    width: 100%;
+  }
+  .p-button-rounded {
+    margin-top: 2px;
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+  }
+  h3 {
+    color: var(--surface-800);
+    margin-left: 10px;
+    margin-top: 6px;
+  }
+  p {
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+}
