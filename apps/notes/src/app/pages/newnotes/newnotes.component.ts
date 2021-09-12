@@ -107,7 +107,7 @@ export class NewnotesComponent implements OnInit,OnDestroy {
           id:userdata.id
         }
         console.log(data);
-        this.notesService.postnotes(data).subscribe(() =>{
+        this.notesService.postnotes(data).pipe(takeUntil(this.$endsub)).subscribe(() =>{
           this.messageService.add({severity:'success', summary: 'Success', detail: "Note is added"});
           timer(1000).toPromise().then(() =>{
             this.router.navigate(['/']);
