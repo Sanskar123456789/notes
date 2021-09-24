@@ -30,6 +30,7 @@ export class NotepageComponent implements OnInit,OnDestroy {
     const udata = localStorage.getItem('userdata');
     const userId:{id:string} = JSON.parse(String(udata));
     this.notesService.getnotes(userId).pipe(takeUntil(this.$endsub)).subscribe((data) => {
+      
       this.noteslist = data[0].notes;
       const l = this.noteslist.length;
       for(let i = 0; i < l; i++) {
@@ -51,7 +52,7 @@ export class NotepageComponent implements OnInit,OnDestroy {
       key : this.id,
       id :userId.id
     }).pipe(takeUntil(this.$endsub)).subscribe((data) => {
-      console.log(data);
+      
       this.messageService.add({severity:'success', summary: 'Success', detail: "Note is deleted"});
           timer(1000).toPromise().then(() =>{
             this._getNotes();

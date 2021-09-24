@@ -49,7 +49,7 @@ export class NewnotesComponent implements OnInit,OnDestroy {
       if(params.id){
         this.isupdatemode=true;
         this.id = params.id;
-        console.log(this.isupdatemode);
+        
       }
     })
   }
@@ -106,7 +106,7 @@ export class NewnotesComponent implements OnInit,OnDestroy {
           color : this.form.controls.color.value,
           id:userdata.id
         }
-        console.log(data);
+        
         this.notesService.postnotes(data).pipe(takeUntil(this.$endsub)).subscribe(() =>{
           this.messageService.add({severity:'success', summary: 'Success', detail: "Note is added"});
           timer(1000).toPromise().then(() =>{

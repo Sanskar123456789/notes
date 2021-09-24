@@ -28,7 +28,8 @@ i {
 }
 
 footer {
-  bottom: 0;
+  position: sticky;
+  bottom: 3%;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 30%;
 }

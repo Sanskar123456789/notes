@@ -1,12 +1,12 @@
 <p-toast></p-toast>
-<div class="notes" *ngFor="let note of noteslist">
+<div class="notes animate__animated animate__zoomIn" *ngFor="let note of noteslist">
     <div class="p-card mt-1" [ngStyle]="{ backgroundColor:note.color}">
         <div class="grid">
-            <div class="col-11" id="panel">
+            <div class="col-10" id="panel">
               <h3>{{note.headers}}</h3>
               <p>{{note.notes}}</p>
             </div>
-            <div class="col-1" offset="1">
+            <div class="col-2" offset="1">
                 <button pButton pRipple type="button" icon="pi pi-trash" class="p-button-rounded p-button-danger" (click)="deletenote(note)" ></button>
                 <button pButton pRipple type="button" icon="pi pi-pencil" class="p-button-rounded p-button-info" (click)="update(note)"></button>
             </div>

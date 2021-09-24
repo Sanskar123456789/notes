@@ -8,7 +8,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "lint" : "nx workspace-lint && ng lint"
+    "lint": "nx workspace-lint && ng lint"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^12.1.0",
     "@angular/router": "^12.1.0",
     "@nrwl/angular": "12.8.0",
+    "animate.css": "^4.1.1",
     "ng2-simple-timer": "^11.2.9",
     "primeflex": "^3.0.1",
     "primeicons": "^4.1.0",

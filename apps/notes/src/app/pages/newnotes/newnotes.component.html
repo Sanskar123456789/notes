@@ -3,15 +3,15 @@
     <div class="p-card">
         <form action="" [formGroup]="form">
             <div class="grid">
-                <div class="col-6 ">
+                <div class="col-10">
                     <span class="p-float-label">
                         <input type="text" id="inputtext" formControlName="header" pInputText > 
                         <label for="inputtext">Header</label>
                     </span>
                 </div>
-                <div class="col-6">
+                <div class="col-2">
                     <p-colorPicker id="color"   [showTransitionOptions]="'5ms'" [hideTransitionOptions]="'5ms'" formControlName="color"></p-colorPicker>
-                    <label for="color">  Choose Color</label>
+                    
                 </div>
                 <div class="col-12 ">
                     <span class="p-float-label">

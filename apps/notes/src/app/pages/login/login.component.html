@@ -10,8 +10,14 @@
                     <input type="password" formControlName="password" pInputText placeholder="Password">
                     <br><br>
                     <small *ngIf="iserror"><p>{{message}}</p></small>
-                    <p-button label="Submit" (onClick)="onSubmit()"></p-button> 
-                    <p-button label="Sign In" class="ml-4" (onClick)="signin()"></p-button>
+                    <div class="grid">
+                        <div class="col-4">
+                            <p-button label="Submit" (onClick)="onSubmit()"></p-button> 
+                        </div>
+                        <div class="col-4">
+                            <p-button id="ca" label="Create account" class="ml-4" (onClick)="signin()"></p-button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
